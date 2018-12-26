@@ -1,11 +1,16 @@
 package com.skufler.sacity;
 
+import android.support.annotation.NonNull;
+
 class SACitySensor {
+
     private int id;
+    @NonNull
     private String data;
+    @NonNull
     private String name;
 
-    public SACitySensor(int id, String data, String name) {
+    public SACitySensor(int id, @NonNull String data, @NonNull String name) {
         this.id = id;
         this.data = data;
         this.name = name;
@@ -19,6 +24,7 @@ class SACitySensor {
         this.id = id;
     }
 
+    @NonNull
     public String getName() {
         return name;
     }
@@ -27,6 +33,7 @@ class SACitySensor {
         this.name = name;
     }
 
+    @NonNull
     public String getData() {
         return data;
     }

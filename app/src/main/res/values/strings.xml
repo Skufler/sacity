@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SACity</string>
+    <string name="title_activity_sensor_info">SensorInfoActivity</string>
+    <string name="title_sensor_list">Sensors</string>
+    <string name="title_sensor_detail">Sensor Detail</string>
+    <string name="sensor_image">Sensor image</string>
 </resources>
