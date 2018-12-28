@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -61,8 +62,8 @@ public class SensorListActivity extends AppCompatActivity {
             isTwoPane = true;
         }
 
-        View recyclerView = findViewById(R.id.sensor_list);
+        RecyclerView recyclerView = findViewById(R.id.sensor_list);
         assert recyclerView != null;
-        // setupRecyclerView((RecyclerView) recyclerView);
+        recyclerView.setAdapter(new SensorListAdapter(sensors, this));
     }
 }
